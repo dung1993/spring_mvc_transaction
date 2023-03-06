@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <title>Victory Admin</title>
+    <th:block th:replace="layout/head"/>
+</head>
+<body>
+<div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <th:block th:replace="layout/navbar" />
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+        <div class="row row-offcanvas row-offcanvas-right">
+            <!-- partial:partials/_settings-panel.html -->
+            <th:block th:replace="layout/theme-setting" />
+            <!-- partial -->
+            <!-- partial:partials/_sidebar.html -->
+            <th:block th:replace="layout/left-sidebar" />
+            <!-- partial -->
+            <div class="content-wrapper">
+
+                <div class="row">
+
+                </div>
+                <!-- partial:partials/_footer.html -->
+
+
+                <!-- partial -->
+            </div>
+            <!-- content-wrapper ends -->
+        </div>
+        <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<footer class="container-fluid">
+    <th:block th:replace="layout/footer" />
+</footer>
+<th:block th:replace="layout/script" />
+</body>
+
+</html>
